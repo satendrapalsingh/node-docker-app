@@ -2,7 +2,7 @@
   "name": "node-docker-app",
   "version": "1.0.0",
   "description": "a simple node docker app",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.16.2"
   },
