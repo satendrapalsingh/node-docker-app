@@ -10,7 +10,7 @@ const uri = "mongodb://mongo/node-docker-app";
 app.get('/', (req, res) => {
     mongodb.MongoClient.connect(uri, function(err, db){
         if (err) return console.log("error connecting with mongodb: " + err); 
-        db.collection('test').find().toArray(function(err,result){
+        db.collection('test').find().toString(function(err,result){
             if(err) return console.log("error reading mongodb data: " + err); 
             res.send(result);
         });
